@@ -80,7 +80,7 @@ write = (levelObject) => {
     if (levelObject.unlocker[0] == 'Module') {
         exitLevel();
         alert('Parabens! Você completou o modulo.');
-        location.assign(`http://127.0.0.1:5500/${levelObject.unlocker[1]}.html`);
+       location.assign(`https://exercicios-aw-1.vercel.app/${levelObject.unlocker[1]}.html`);
     }
     localStorage.setItem('answer', JSON.stringify(moduleObject));
     load();
