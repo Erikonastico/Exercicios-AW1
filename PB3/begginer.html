@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Remnants from Nowhere</title>
+</head>
+
+<body>
+    <main id="begginer">
+        <section id="titleContent">
+            <h1>Iniciante</h1>
+            <p>
+                <b>Niveis:</b> 4<br>
+                <b>Dificuldade:</b> 0<br>
+            </p>
+            <p>
+                Todo mundo começa de algum lugar.
+            </p>
+        </section>
+        <div class="hexagon toggled" id="I">
+            <a onclick="accessLevel('I')">
+                <svg height="150" width="140">
+                    <polygon points="60,10 115,50 115,100 60,140 5,100 5,50" />
+                    <text x="55" y="85" class="text">I</text>
+                </svg>
+            </a>
+        </div>
+        <div class="hexagon untoggled" id="II">
+            <a onclick="accessLevel('II')">
+                <svg height="150" width="140">
+                    <polygon points="60,10 115,50 115,100 60,140 5,100 5,50" />
+                    <text x="48" y="85" class="text">A</text>
+                </svg>
+            </a>
+        </div>
+        <div class="hexagon untoggled" id="III">
+            <a onclick="accessLevel('III')">
+                <svg height="150" width="140">
+                    <polygon points="60,10 115,50 115,100 60,140 5,100 5,50" />
+                    <text x="48" y="85" class="text">B</text>
+                </svg>
+            </a>
+        </div>
+        <div class="hexagon untoggled" id="Gate">
+            <a onclick="accessLevel('Gate')">
+                <svg height="150" width="140">
+                    <polygon points="60,10 115,50 115,100 60,140 5,100 5,50" />
+                    <text x="48" y="85" class="text">☖</text>
+                </svg>
+            </a>
+        </div>
+    </main>
+    <div id="levelOverlay">
+        <div id="overlay">
+
+        </div>
+    </div>
+</body>
+<script src="./general.js"></script>
+<script src="./begginer.js"></script>
+
+</html>
